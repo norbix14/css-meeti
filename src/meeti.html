@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeti</title>
+    <link rel="shortcut icon" href="./img/page/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="root" id="root">
+      <header class="header container">
+        <div class="header__logo">
+          <a href="./index.html">
+            <picture>
+              <source srcset="./img/page/logo.avif" type="image/avif" />
+              <source srcset="./img/page/logo.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/page/logo.png"
+                class="img"
+                alt="logo"
+              />
+            </picture>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="#" class="nav__link nav__link--active nav__link--create"
+            >Crear grupo</a
+          >
+          <a href="#" class="nav__link">Iniciar sesión</a>
+          <a href="#" class="nav__link">Registrarse</a>
+        </nav>
+      </header>
+      <main class="main container meeti">
+        <h1 class="meeti__name">headless wordpress con next.js</h1>
+        <div class="meeti__grid">
+          <section class="meeti__info">
+            <picture>
+              <source srcset="./img/page/meeti.avif" type="image/avif" />
+              <source srcset="./img/page/meeti.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/page/meeti.jpg"
+                class="meeti__img"
+                alt="meeti"
+              />
+              <p class="meeti__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                possimus veritatis necessitatibus, ad ullam aperiam consectetur
+                eum nulla voluptatibus adipisci doloribus, eaque recusandae,
+                incidunt nostrum tempore optio deserunt quis et.
+              </p>
+              <p class="meeti__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Mollitia assumenda perspiciatis aspernatur laboriosam est
+                voluptatum deserunt saepe architecto eum obcaecati sapiente
+                fugit fuga reiciendis illum atque, amet adipisci, omnis veniam.
+              </p>
+            </picture>
+          </section>
+          <aside class="sidebar">
+            <picture>
+              <source srcset="./img/page/mapa.avif" type="image/avif" />
+              <source srcset="./img/page/mapa.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/page/mapa.jpg"
+                class="sidebar__map"
+                alt="map"
+              />
+            </picture>
+            <div class="sidebar__content">
+              <h3 class="sidebar__heading">Información Meeti</h3>
+              <p class="sidebar__text">
+                <span class="sidebar__label">Fecha:</span>
+                07 de marzo de 2022
+              </p>
+              <p class="sidebar__text">
+                <span class="sidebar__label">Hora:</span>
+                14:30
+              </p>
+              <p class="sidebar__text">
+                <span class="sidebar__label">Ubicación:</span>
+                Calle avenida 1234
+              </p>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <footer class="container footer">
+        <nav class="nav">
+          <a href="#" class="nav__link nav__link--active nav__link--create"
+            >Crear grupo</a
+          >
+          <a href="#" class="nav__link">Iniciar sesión</a>
+          <a href="#" class="nav__link">Registrarse</a>
+        </nav>
+        <p class="footer__copyright">
+          Meeti &copy;. Todos los derechos reservados
+        </p>
+      </footer>
+    </div>
+    <script src="./js/imgsupport.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

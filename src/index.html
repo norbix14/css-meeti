@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meeti</title>
+    <link rel="shortcut icon" href="./img/page/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <div class="root" id="root">
+      <header class="header container">
+        <div class="header__logo">
+          <a href="./index.html">
+            <picture>
+              <source srcset="./img/page/logo.avif" type="image/avif" />
+              <source srcset="./img/page/logo.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./img/page/logo.png"
+                class="img"
+                alt="logo"
+              />
+            </picture>
+          </a>
+        </div>
+        <nav class="nav">
+          <a href="#" class="nav__link nav__link--active nav__link--create"
+            >Crear grupo</a
+          >
+          <a href="#" class="nav__link">Iniciar sesión</a>
+          <a href="#" class="nav__link">Registrarse</a>
+        </nav>
+      </header>
+      <section class="hero">
+        <h1 class="hero__text">
+          encuentra o crea un grupo para compartir lo que más te gusta
+        </h1>
+        <a href="#" class="hero__link">Obtener una cuenta</a>
+      </section>
+      <section class="search">
+        <h2 class="search__heading">busca un grupo en tu ciudad</h2>
+        <div class="container">
+          <form class="form" id="formSearch">
+            <select name="categories" id="categories" class="form__field">
+              <option value="prog">Programación</option>
+              <option value="design">Diseño</option>
+              <option value="business">Negocios</option>
+              <option value="fashion">Moda</option>
+              <option value="health">Ejercicio y salud</option>
+              <option value="photography">Fotografía</option>
+              <option value="food">Comida</option>
+              <option value="interior">Diseño interior</option>
+              <option value="cafe">Café</option>
+              <option value="cinema">Cine</option>
+              <option value="books">Libros</option>
+              <option value="entrepeneurship">Emprendimientos</option>
+            </select>
+            <input
+              type="text"
+              name="event"
+              id="event"
+              class="form__field"
+              placeholder="Nombre del evento"
+            />
+            <input
+              type="text"
+              name="country"
+              id="country"
+              class="form__field"
+              placeholder="Ciudad o país"
+            />
+            <input type="submit" class="form__submit" value="Buscar" />
+          </form>
+        </div>
+      </section>
+      <main class="main events container">
+        <h2 class="events__heading">Próximos eventos</h2>
+        <div class="events__grid">
+          <div class="event">
+            <a href="./meeti.html">
+              <picture>
+                <source srcset="./img/page/imagen1.avif" type="image/avif" />
+                <source srcset="./img/page/imagen1.webp" type="image/webp" />
+                <img
+                  loading="lazy"
+                  src="./img/page/imagen1.jpg"
+                  class="event__img"
+                  alt="evento"
+                />
+              </picture>
+              <div class="event__content">
+                <p class="event__date">Lunes 7 de marzo de 2022</p>
+                <h3 class="event__name">Ideas de negocios</h3>
+                <div class="event__author">
+                  <div class="event__author-image">
+                    <picture>
+                      <source
+                        srcset="./img/profiles/perfil1.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="./img/profiles/perfil1.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        loading="lazy"
+                        src="./img/profiles/perfil1.jpg"
+                        class="img"
+                        alt="perfil"
+                      />
+                    </picture>
+                  </div>
+                  <div class="event__author-data">
+                    <p class="event__organization-text">Organizado por:</p>
+                    <p class="event__organization-name">Norberto</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="event">
+            <a href="./meeti.html">
+              <picture>
+                <source srcset="./img/page/imagen2.avif" type="image/avif" />
+                <source srcset="./img/page/imagen2.webp" type="image/webp" />
+                <img
+                  loading="lazy"
+                  src="./img/page/imagen2.jpg"
+                  class="event__img"
+                  alt="evento"
+                />
+              </picture>
+              <div class="event__content">
+                <p class="event__date">Lunes 7 de marzo de 2022</p>
+                <h3 class="event__name">Bitcoin y criptos</h3>
+                <div class="event__author">
+                  <div class="event__author-image">
+                    <picture>
+                      <source
+                        srcset="./img/profiles/perfil2.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="./img/profiles/perfil2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        loading="lazy"
+                        src="./img/profiles/perfil2.jpg"
+                        class="img"
+                        alt="perfil"
+                      />
+                    </picture>
+                  </div>
+                  <div class="event__author-data">
+                    <p class="event__organization-text">Organizado por:</p>
+                    <p class="event__organization-name">Alejandro</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="event">
+            <a href="./meeti.html">
+              <picture>
+                <source srcset="./img/page/imagen3.avif" type="image/avif" />
+                <source srcset="./img/page/imagen3.webp" type="image/webp" />
+                <img
+                  loading="lazy"
+                  src="./img/page/imagen3.jpg"
+                  class="event__img"
+                  alt="evento"
+                />
+              </picture>
+              <div class="event__content">
+                <p class="event__date">Lunes 7 de marzo de 2022</p>
+                <h3 class="event__name">Pizza paso a paso</h3>
+                <div class="event__author">
+                  <div class="event__author-image">
+                    <picture>
+                      <source
+                        srcset="./img/profiles/perfil2.avif"
+                        type="image/avif"
+                      />
+                      <source
+                        srcset="./img/profiles/perfil2.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        loading="lazy"
+                        src="./img/profiles/perfil2.jpg"
+                        class="img"
+                        alt="perfil"
+                      />
+                    </picture>
+                  </div>
+                  <div class="event__author-data">
+                    <p class="event__organization-text">Organizado por:</p>
+                    <p class="event__organization-name">Fabrizio</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+      <section class="categories">
+        <h2 class="categories__heading">Categorías</h2>
+        <ul class="container categories__grid">
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_1.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_1.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_1.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Programación</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_2.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_2.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_2.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Diseño UX y UI</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_3.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_3.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_3.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Negocios e ideas</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_4.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_4.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_4.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Ropa y moda</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_5.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_5.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_5.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Ejercicio y bienestar</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_6.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_6.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_6.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Fotografía</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_7.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_7.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_7.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Comida</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_8.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_8.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_8.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Diseño interior</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_9.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_9.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_9.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Café</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_10.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_10.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_10.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Cine</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_11.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_11.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_11.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Libros</p>
+          </li>
+          <li class="category">
+            <picture>
+              <source
+                srcset="./img/categories/categoria_12.avif"
+                type="image/avif"
+              />
+              <source
+                srcset="./img/categories/categoria_12.webp"
+                type="image/webp"
+              />
+              <img
+                loading="lazy"
+                src="./img/categories/categoria_12.jpg"
+                class="category__img"
+                alt="categoria"
+              />
+            </picture>
+            <p class="category__name">Emprendimiento</p>
+          </li>
+        </ul>
+      </section>
+      <section class="groups">
+        <div class="container groups__grid">
+          <div class="groups__block">
+            <h3 class="groups__heading">Crea un grupo</h3>
+            <p class="groups__text">
+              Comparte lo que te gusta o tu pasión con los demás. Crea tu propio
+              grupo y eventos hoy mismo sin costos
+            </p>
+          </div>
+          <div class="groups__block">
+            <h3 class="groups__heading">Únete a un grupo</h3>
+            <p class="groups__text">
+              Conoce personas con tus mismos gustos y pasiones. Únete a un grupo
+              ya existente y asiste a próximos eventos
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="container footer">
+        <nav class="nav">
+          <a href="#" class="nav__link nav__link--active nav__link--create"
+            >Crear grupo</a
+          >
+          <a href="#" class="nav__link">Iniciar sesión</a>
+          <a href="#" class="nav__link">Registrarse</a>
+        </nav>
+        <p class="footer__copyright">
+          Meeti &copy;. Todos los derechos reservados
+        </p>
+      </footer>
+    </div>
+    <script src="./js/imgsupport.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

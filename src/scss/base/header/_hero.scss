@@ -1,0 +1,32 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mx;
+
+.notwebp.notavif .hero {
+  background-image: url(../img/page/hero.jpg);
+}
+
+.webp .hero {
+  background-image: url(../img/page/hero.webp);
+}
+
+.avif .hero {
+  background-image: url(../img/page/hero.avif);
+}
+
+.hero {
+  min-height: 60rem;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &__text {
+    max-width: 60rem;
+    color: var.$color_white;
+  }
+  &__link {
+    @include mx.button(var.$color_terciary, var.$color_white);
+  }
+}

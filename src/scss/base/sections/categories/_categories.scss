@@ -1,0 +1,34 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mx;
+
+.categories {
+  padding: 5rem 0;
+  background-color: var.$color_gray_light;
+  &__heading {
+    @include mx.heading-simple();
+  }
+  &__grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    @include mx.media-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mx.media-desktop {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.category {
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: lighten(var.$color_gray, 60%);
+  }
+  &__name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+}

@@ -1,0 +1,13 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mx;
+
+.header {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mx.media-tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

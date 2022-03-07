@@ -1,0 +1,27 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mx;
+
+.groups {
+  padding: 5rem 0;
+  color: var.$color_white;
+  @include mx.bg-gradient(to bottom, var.$color_primary, var.$color_secondary);
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    @include mx.media-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__heading {
+    font-size: 3rem;
+  }
+  &__text {
+    line-height: 2;
+    font-size: 2.4rem;
+    color: var.$color_white;
+  }
+  @include mx.media-tablet {
+    @include mx.bg-gradient(to right, var.$color_primary, var.$color_secondary);
+  }
+}

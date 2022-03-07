@@ -1,0 +1,9 @@
+@mixin bg-gradient($position, $primary, $secondary) {
+  background-image: linear-gradient(
+    $position,
+    $primary 0%,
+    $primary 50%,
+    $secondary 50%,
+    $secondary 100%
+  );
+}

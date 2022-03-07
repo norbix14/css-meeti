@@ -1,0 +1,33 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mx;
+
+.search {
+  padding: 5rem 0;
+  background-color: var.$color_gray_light;
+  &__heading {
+    @include mx.heading-simple();
+  }
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__field {
+    padding: 1rem;
+    border: 0.1rem solid lighten(var.$color_gray, 50%);
+  }
+  &__submit {
+    @include mx.button(var.$color_primary, var.$color_white);
+    margin-top: 0;
+  }
+  @include mx.media-tablet {
+    @include mx.grid(2, 3rem);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  @include mx.media-desktop {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: unset;
+  }
+}

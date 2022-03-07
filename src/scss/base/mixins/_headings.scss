@@ -1,0 +1,7 @@
+@use 'base/variables' as var;
+
+@mixin heading-simple {
+  text-align: center;
+  margin: 0;
+  color: var.$color_gray;
+}
